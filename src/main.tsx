@@ -15,9 +15,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <DAppProvider config={{
-      readOnlyChainId: 56,
+      readOnlyChainId: BSC.chainId,
       readOnlyUrls: {
-        [56]: "https://bsc-dataseed.binance.org/"
+        [BSC.chainId]: "https://bsc-dataseed.binance.org/"
 
       },
       refresh: 5,//defaut 1 5 block da bir refresh liyor
